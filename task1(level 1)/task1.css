@@ -1,0 +1,275 @@
+body{
+     /*background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    ;*/
+    /*background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);*/
+    /*background: linear-gradient(135deg, #093028, #237a57);*/
+    background: linear-gradient(135deg, #ffffff, #d3cce3);
+    background-attachment: fixed;
+
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+.nav-bar {
+    background: white;
+
+    height: 40px;
+    width: 100%;
+    color: black;
+   
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  box-shadow: 3px 3px 2px grey;
+    border-radius: 3px;
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 100000;
+}
+h1{
+    text-align: center;
+    font-family: monospace;
+}
+.nav-bar a{
+    text-decoration: none;
+    color: black;
+
+
+
+}
+.nav-bar a:hover{
+    color: blue;
+    
+}
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.header-content{
+    display: flex;
+    justify-content: space-between;
+}
+.heading{
+    font-family: monospace;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    position: relative;
+    top:-38px;
+    color: blue;
+}
+
+.header-image{
+    height: 500px;
+    width: 600px;
+    
+    background: url(images/header-image\(nobg\).png);
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    position: relative;
+    top:50px;
+}
+
+section{
+    text-transform: capitalize;
+    color: blue;
+
+}
+
+.introduction{
+    display: flex;
+    flex-direction: column;
+}
+.introduction h1{
+    text-align: center;
+}
+.intoduction-images{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.intoduction-images video{
+    border-radius: 5px;
+}
+
+.input-layer{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.input-layer-image video{
+    
+    height: 400px;
+    width: 400px;
+    border-radius: 5px;
+    position: relative;
+    top:-20px;
+   
+    background-repeat: no-repeat;
+}
+.input-layer-information p{
+    line-height: 1.5rem;
+    font-size: 20px;
+    color: black;
+    position: relative;
+    top:25px;
+    text-transform: none;
+    
+}
+.hidden-layer{
+    display: flex;
+    justify-content: space-evenly;
+}
+.hidden-layer-image video{
+    height: 400px;
+    width: 400px;
+    border-radius: 5px;
+
+}
+
+.hidden-layer-information p{
+    color: black;
+    text-transform: none;
+    line-height: 1.5rem;
+    position: relative;
+    top:50px;
+}
+
+.output-layer{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+
+}
+
+.output-layer-image{
+    background: url(images/output-layer.png);
+    
+    height: 200px;
+    width: 200px;
+    background-repeat: no-repeat;
+
+}
+
+.output-layer-information p{
+    color: black;
+    line-height: 1.5rem;
+}
+
+.contact-us{
+    background-color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 10px 10px 10px grey;
+}
+.contact-us input{
+    height: 30px;
+    width: 250px;
+}
+.contact-us textarea{
+    height: 70px;
+    width: 250px;
+}
+
+.contact-us button{
+    background-color: black;
+    color:white;
+    border: none;
+    padding: 20px;
+    width: 150px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition:1.25s linear ;
+
+}
+
+.contact-us button:hover{
+    background-color: white;
+    border :2px solid black;
+    color: black;
+}
+
+footer{
+    margin-top: 10px;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: black;
+    color: whitesmoke;
+    padding: 10px;
+    align-items: center;
+    width: 100vw;
+
+    border-radius: 5px;
+
+
+}
+
+footer a i{
+    color: white;
+    border: 2px solid white;
+    padding: 4px ;
+    border-radius: 25px;
+    background-color: black;
+    padding: 10px;
+    
+    
+    
+}
+footer a :hover {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+
+}
+
+.footer-links{
+    text-transform: capitalize;
+}
+
+.js-content{
+   
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: 1.25s linear;
+}
+
+.animate{
+    opacity: 1;
+    transform: translateX(0px);
+   
+}
+
+@media only screen and (max-width:768px){
+    
+   
+    .header-content{
+        flex-direction: column-reverse;
+        
+    }
+
+    .intoduction-images{
+        display: flex;
+        flex-direction: column;
+    }
+   
+    .input-layer,.hidden-layer,.output-layer{
+        flex-direction: column-reverse;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    
+}

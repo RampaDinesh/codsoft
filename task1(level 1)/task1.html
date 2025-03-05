@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="shortcut icon" href="images/header-image.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="task1.css">
+    <script src="task1.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <div class="nav-bar">
+            
+            <a href="#">home</a>
+            <a href="#introduction">introduction</a>
+            <a href="#working">working</a>
+            <a href="#contact">contact</a>
+        </div>
+        <div class="header-content js-content">
+        <div class="heading">
+            <h1>explore neural networks</h1>
+        </div>
+        <div class="header-image">
+
+        </div>
+        </div>
+
+    </header>
+
+    <main>
+        <section id="introduction">
+            
+            <div class="introduction js-content">
+                <h1> from biology to computers </h1>
+                <div class="intoduction-images">
+
+
+              <div class="biology-images">
+                <video src="images/biology.mp4" autoplay loop playsinline muted></video>
+              </div>  
+                <div class="neural-network">
+                    <video src="images/neuralnetwork.mp4" autoplay loop playsinline muted></video>
+
+                </div>
+            </div>
+            </div>
+        </section>
+        <section id="working">
+            <div class="working-heading">
+                <h1>how neural net work works</h1>
+            </div>
+            <hr>
+            <div class="input-layer js-content">
+                <div class="input-layer-image">
+                    <video src="images/input-video.mp4" autoplay loop playlines></video>
+
+                </div>
+                <div class="input-layer-information">
+                    <h2>input-layer</h2>
+                    <p>
+                        The input layer is the first layer of a neural network <br><br>
+It receives raw data (e.g., images, text, numbers) and passes it to the next layer <br><br>
+Each neuron in the input layer represents a feature of the data <br><br>
+
+                    </p>
+                </div>
+            </div>
+            <hr>
+            <div class="hidden-layer js-content">
+                <div class="hidden-layer-image">
+                    <video src="images/hidden-layer.mp4"  autoplay loop  playlines muted>
+
+                    </video>
+                </div>
+                <div class="hidden-layer-information">
+                    <h3>hidden layer</h3>
+                    <p>The hidden layer processes the input data by applying weights and activation functions <br> <br>
+                        It detects patterns, features, and relationships that the input layer alone cannot understand. <br> <br>
+                        A neural network can have one or multiple hidden layers (Deep Learning = many hidden layers). <br> <br></p>
+                </div>
+
+            </div>
+           <hr>
+            <div class="output-layer js-content">
+               
+                <div class="output-layer-image">
+                    
+                </div>
+                <div class="output-layer-information">
+                    <h2>output</h2>
+                    <p>
+                        it matches the fires the correct output node based on input it get's from hidden layer
+                        </p> <br>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section id="contact">
+            <div class="contact-us js-content">
+                <form action="https://api.web3forms.com/submit" method="POST">
+
+                    <input type="hidden" name="access_key" value="032aa552-bc85-4451-bb8f-bccc7a42f007">
+                
+                <h1>contact form</h1>
+                <input type="text" placeholder="name"  name="name " required> <br><br>
+                <input type="email" placeholder="email" name="email"  required><br><br>
+                <textarea  placeholder="your ideas on neural network" name="message"></textarea><br><br>
+                
+                <button type="submit">send</button>
+            </form>
+
+            </div>
+        </section>
+        <footer id="contact">
+            <h3>developed by  r.dinesh</h3>
+            <div class="footer-links">
+                <h3>for more information </h3>
+                <a href="https://en.wikipedia.org/wiki/Neural_network">  <i class="fa-brands fa-wikipedia-w"></i></a>
+            </div>
+           
+        </footer>
+    </main>
+    
+</body>
+</html>
